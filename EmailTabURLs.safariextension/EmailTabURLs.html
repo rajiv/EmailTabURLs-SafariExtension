@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+  function emailTabURLs(event) {
+    if (event.command !== "emailTabURLs")
+      return;
+
+    var mailToString = "mailto:?subject=URLs from Safari&body=%0A";
+
+    var windows = safari.application.browserWindows;
+    for (var i = 0; i < windows.length; ++i) {
+      var tabs = windows[i].tabs;
+      for (var j = 0; j < tabs.length; ++j) {
+        if (tabs[j].url) {
+          mailToString += encodeURIComponent(tabs[j].url + "\n\n");
+        }
+      }
+    }
+    safari.application.activeBrowserWindow.activeTab.url = mailToString;
+    return false;
+  }
+  safari.application.addEventListener("command", emailTabURLs, false);
+</script>
+</head>
+<body></body>
+</html>
