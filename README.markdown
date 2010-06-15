@@ -1,9 +1,18 @@
 Email Tab URLs Safari Extension
 ===========================
 
-http://github.com/rajiv/EmailTabURLs-SafariExtension
+Homepage: http://github.com/rajiv/EmailTabURLs-SafariExtension  
+Download: [EmailTabURLs.safariextz](http://github.com/downloads/rajiv/EmailTabURLs-SafariExtension/EmailTabURLs.safariextz)
 
 Composes an email containing the URLs of all open tabs.
+
+
+Install
+-------
+
+1. Enable Safari extensions (see the [Safari Extensions blog](http://safariextensions.tumblr.com/post/680219521/post-how-to-enable-extensions-06-09-10))
+2. Download the [Email Tab URLs extension package](http://github.com/downloads/rajiv/EmailTabURLs-SafariExtension/EmailTabURLs.safariextz).
+3. Double click the downloaded `safariextz` package.
 
 
 License
