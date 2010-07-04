@@ -6,9 +6,27 @@
     if (event.command !== "emailTabURLs")
       return;
 
-    var mailToString = "mailto:?subject=URLs from Safari&body=%0A";
-
     var windows = safari.application.browserWindows;
+    collectURLsAndEmail(windows);
+    return false;
+  }
+
+  function emailTabURLsContextualMenuHandler(event) {
+    if (event.command === "emailTabURLsFromAllWindows") {
+      var windows = safari.application.browserWindows;
+    }
+    else if (event.command === "emailTabURLsFromThisWindow") {
+      var windows = [safari.application.activeBrowserWindow];
+    }
+    else {
+      return;
+    }
+    collectURLsAndEmail(windows);
+    return false;
+  }
+
+  function collectURLsAndEmail(windows) {
+    var mailToString = "mailto:?subject=URLs from Safari&body=%0A";
     for (var i = 0; i < windows.length; ++i) {
       var tabs = windows[i].tabs;
       for (var j = 0; j < tabs.length; ++j) {
@@ -20,7 +38,9 @@
     safari.application.activeBrowserWindow.activeTab.url = mailToString;
     return false;
   }
+
   safari.application.addEventListener("command", emailTabURLs, false);
+  safari.application.addEventListener("command", emailTabURLsContextualMenuHandler, false);
 </script>
 </head>
 <body></body>

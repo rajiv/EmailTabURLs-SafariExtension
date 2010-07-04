@@ -20,11 +20,19 @@
 		<array>
 			<dict>
 				<key>Command</key>
-				<string>emailTabURLs</string>
+				<string>emailTabURLsFromAllWindows</string>
 				<key>Identifier</key>
 				<string>emailTabURLsFromAllWindowsContextMenuItem</string>
 				<key>Title</key>
 				<string>Email tab URLs from all windows</string>
+			</dict>
+			<dict>
+				<key>Command</key>
+				<string>emailTabURLsFromThisWindow</string>
+				<key>Identifier</key>
+				<string>emailTabURLsFromThisWindowContextMenuItem</string>
+				<key>Title</key>
+				<string>Email tab URLs from this window</string>
 			</dict>
 		</array>
 		<key>Global Page</key>
