@@ -15,6 +15,13 @@ Install
 3. Double click the downloaded `safariextz` package.
 
 
+Revision History
+----------------
+
+ * 1.1: Adds contextual menu items to email URLs from all or just the active window.
+ * 1.0: Initial version.
+
+
 License
 -------
 
