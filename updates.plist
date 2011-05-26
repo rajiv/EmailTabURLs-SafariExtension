@@ -10,11 +10,11 @@
        <key>Developer Identifier</key>
        <string>XW2VHJCX85</string>
        <key>CFBundleVersion</key>
-       <string>5</string>
+       <string>6</string>
        <key>CFBundleShortVersionString</key>
-       <string>1.1</string>
+       <string>1.2</string>
        <key>URL</key>
-       <string>http://github.com/downloads/rajiv/EmailTabURLs-SafariExtension/EmailTabURLs-1.1.safariextz</string>
+       <string>http://github.com/downloads/rajiv/EmailTabURLs-SafariExtension/EmailTabURLs-1.2.safariextz</string>
      </dict>
    </array>
 </dict>

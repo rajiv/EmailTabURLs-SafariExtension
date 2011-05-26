@@ -3,7 +3,7 @@ Email Tab URLs Safari Extension
 
 Homepage: http://github.com/rajiv/EmailTabURLs-SafariExtension
 
-Download: [EmailTabURLs-1.1.safariextz](http://github.com/downloads/rajiv/EmailTabURLs-SafariExtension/EmailTabURLs-1.1.safariextz)
+Download: [EmailTabURLs-1.2.safariextz](http://github.com/downloads/rajiv/EmailTabURLs-SafariExtension/EmailTabURLs-1.2.safariextz)
 
 This extension adds a toolbar button and contextual menu items to Safari. Selecting one composes an email containing the URLs of all open tabs in all windows, or the active window.
 
@@ -19,6 +19,7 @@ Install
 Revision History
 ----------------
 
+ * 1.2: Adds a preference setting to include page titles in the email.
  * 1.1: Adds contextual menu items to email URLs from all or just the active window.
  * 1.0: Initial version.
 
