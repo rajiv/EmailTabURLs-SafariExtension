@@ -1,5 +1,13 @@
 <!DOCTYPE HTML>
 <html>
+<!--
+
+  Email Tab URLs Safari Extension
+  Copyright © 2010-2011 Rajiv Aaron Manglani. Released under the MIT license.
+
+  http://github.com/rajiv/EmailTabURLs-SafariExtension
+
+-->
 <head>
 <script>
   function emailTabURLs(event) {
@@ -31,6 +39,9 @@
       var tabs = windows[i].tabs;
       for (var j = 0; j < tabs.length; ++j) {
         if (tabs[j].url) {
+          if (safari.extension.settings.includePageTitles) {
+            mailToString += encodeURIComponent(tabs[j].title + "\n");
+          }
           mailToString += encodeURIComponent(tabs[j].url + "\n\n");
         }
       }

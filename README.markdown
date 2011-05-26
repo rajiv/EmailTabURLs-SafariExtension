@@ -26,7 +26,7 @@ Revision History
 License
 -------
 
-Copyright © 2010 Rajiv Aaron Manglani. Released under the MIT license.
+Copyright © 2010-2011 Rajiv Aaron Manglani. Released under the MIT license.
 
 
 Toolbar icon based on Fugue Icons, copyright © Yusuke Kamiyamane. Licensed under a Creative Commons Attribution 3.0 license.
